@@ -14,8 +14,8 @@ spring:
           driver-class-name: com.mysql.jdbc.Driver
           #基本属性
           url: jdbc:mysql://127.0.0.1:3306/mine?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=GMT
-          username: root
-          password: root
+          username: mysql
+          password: mysql
           #配置初始化大小/最小/最大
           initial-size: 1
           min-idle: 1
@@ -47,6 +47,9 @@ spring:
           multipart:
             max-file-size: 10000MB
             max-request-size: 1000000MB
+    jackson:
+      serialization:
+        indent-output: true
 
 
 mybatis:
